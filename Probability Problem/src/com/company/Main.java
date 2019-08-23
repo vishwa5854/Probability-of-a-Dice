@@ -16,6 +16,9 @@ public class Main {
         generateAllPossibleOutcomes(dimensionsOfCube, dieRolled, input);
         ArrayList<String> fin = new ArrayList<>();
         refineTheGeneratedData(dieRolled, input, fin);
+        for(String a : fin){
+            System.out.println(a);
+        }
         double probability = (fin.size())/Math.pow(dimensionsOfCube,dieRolled);
         System.out.print("The probability is : " + probability);
     }
